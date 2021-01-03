@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+            <title> Pizzeria </title>
+            <meta charsert = "utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" type = "text/css" href = "css/style.css" media = "all">
+
+            <!-- Implementing model-viewer.dev into my website to create the 3D Animation in the begging -->
+            <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    </head>
+    <body>
+        <div class="section1"> 
+            <div id="particles-js"> </div> 
+                <!-- Implementing particles for space effect -->
+                <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+                <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script> <!-- stats.js lib -->            <script src = "js/script.js"> </script>
+            
+                <header class = "menu"> 
+                    <div id="logo"> </div>
+                    <nav class="navbar">
+                        <ul>
+                            <a href= #pizzamenu class ="mbuttons"> <li> Menu </li> </a> 
+                            <a href= #Movies class ="mbuttons"> <li> Order </li> </a> 
+                            <a href= #home class ="mbuttons"> <li> Experience </li> </a>
+                            <a href= #home class ="mbuttons"> <li> Contact us </li> </a>  
+                        </ul>
+                    </nav>
+                </header>
+
+            <div id="logo"> <img class="logo" src="img/pizzaplanet.png"> </div>
+                <div id="objects"> 
+                    <model-viewer id="pizza" src="obj/Pizza.glb" auto-rotate ></model-viewer>
+                </div>
+
+                <div id="pizzamenu"> <img class="pizzamenu" src="img/Hologram.png"> </div>
+        </div>
+                
+        
+            <div class="void"> 
+                
+            </div>
+
+
+    </body>
+</html>

@@ -1,0 +1,135 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.section1{
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: blue;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #05021b;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+
+#objects{
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+model-viewer{
+    --progress-bar-color: none;
+}
+
+#rocket {
+    width: 200px;
+    height: 100px;
+    float: left;
+    margin-top: 1%;
+    margin-left: -20px;
+}
+
+#pizza {
+    width: 600px;
+    height: 500px;
+    float: left;
+    margin-left: 60%;
+    margin-top: 10%;
+}
+
+#hologram {
+    width: 300px;
+    height: 200px;
+    float: left;
+    margin-left: 40%;
+}
+
+#box {
+    width: 100px;
+    height: 50px;
+    float: left;
+    margin-left: 40%;
+    margin-top: -10%;
+}
+
+
+.logo {
+	width: 150px;
+    height: 80px;
+    margin-top: 1%;
+    margin-left: 1%;
+    float: left;
+    position: relative;
+}
+
+#pizzamenu {
+    width: 1200px;
+    height: 800px;
+    margin-top: -25%;
+    float: left;
+    position: relative;
+   
+}
+
+.pizzamenu{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    background-size: cover;
+}
+
+
+.menu {
+    width: 100%;
+    height: 70px;
+    float: left;
+    position: absolute;
+    z-index: 1000;
+
+}
+
+.menu li {
+    list-style: none;
+    float: left;
+    width: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font: 15px "Segoe UI";
+    margin-left: 20%;
+    margin-top: 2%;
+    color: white;
+}
+
+.menu li:hover {
+    color: green;
+}
+
+
+.void {
+    float: left;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background-color: #05021b;
+}

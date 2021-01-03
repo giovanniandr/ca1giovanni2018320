@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<pizzaplanet>
+    <!-- Node for regular pizzas -->
+    <types name = "Regular">
+        <product>
+            <pizza> Neapolitan Pizza </pizza>
+            <ingredients> Buffalo Cheese, Tomatoes, Basil </ingredients>
+            <price> 13 </price>
+        </product>
+
+        <product>
+            <pizza> New York City Pizza </pizza>
+            <ingredients> Mozzarella Cheese, Tomatoes </ingredients>
+            <price> 11 </price>
+        </product>
+
+        <product>
+            <pizza> Chicago Pizza </pizza>
+            <ingredients> Ground Beef, Sausages, Pepperoni, Onion, Mushrooms, Peppers </ingredients>
+            <price> 13 </price>
+        </product>
+
+        <product>
+            <pizza> Sicilian Pizza </pizza>
+            <ingredients> Tomatoes Bits, Onions, Anchovies, Olives, Herbs </ingredients>
+            <price> 11 </price>
+        </product>
+
+        <product>
+            <pizza> Greek Pizza </pizza>
+            <ingredients> Tomato Base, Feta Cheese, Black Olives, Red Onions, Basil </ingredients>
+            <price> 13 </price>
+        </product>
+
+        <product>
+            <pizza> California Pizza </pizza>
+            <ingredients> Panchetta, Red Onions, Scallions, Chicken, Red Pepper </ingredients>
+            <price> 13 </price>
+        </product>
+
+        <product>
+            <pizza> Detroit Pizza </pizza>
+            <ingredients> Tomato Base, Brick Cheese, Mozzarella, Pepperoni </ingredients>
+            <price> 11 </price>
+        </product>
+
+    </types>
+
+    <!-- Node for vegetarian pizzas -->
+    <types name = "Vegetarian">
+
+    </types>
+
+    <!-- Node for veganpizzas -->
+    <types name = "Vegan">
+
+    </types>
+
+</pizzaplanet>
