@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Referecing and based on Mikhail PaddyCaffe's https://github.com/mikhail-cct/xml-bootcamp -->
 <pizzaplanet>
     <!-- Node for regular pizzas -->
     <types name = "Regular">
@@ -48,12 +49,56 @@
 
     <!-- Node for vegetarian pizzas -->
     <types name = "Vegetarian">
+        <product>
+            <pizza> Marghetira Pizza </pizza>
+            <ingredients> Tomato Base, Buffalo Cheese, Mozzarella Cheese, Oregano, Basil </ingredients>
+            <price> 13 </price>
+        </product>
 
+        <product>
+            <pizza> Zucchini Pizza </pizza>
+            <ingredients> Tomato Base, Zucchini, Goat Cheese, Basil </ingredients>
+            <price> 12 </price>
+        </product>
+
+        <product>
+            <pizza> Three Cheese Pizza </pizza>
+            <ingredients> White Base, Mozzarella Cheese, Buffalo Cheese, Scarmoza </ingredients>
+            <price> 11 </price>
+        </product>
+
+        <product>
+            <pizza> Hawaiian Pizza </pizza>
+            <ingredients> White Base, Sweet Potato Ham, Pears, Pineapple, Mozzarella  </ingredients>
+            <price> 12 </price>
+        </product>
     </types>
 
     <!-- Node for veganpizzas -->
     <types name = "Vegan">
+        <product>
+            <pizza> Margherita Pizza </pizza>
+            <ingredients> Tomato Base, Vegan Mozzarella, Oregano, Basil </ingredients>
+            <price> 11 </price>
+        </product>
 
+        <product>
+            <pizza> Butternut squash Pizza </pizza>
+            <ingredients> Butternut Squash Base, Broccolini, Chickpeas, Red Onions </ingredients>
+            <price> 13 </price>
+        </product>
+
+        <product>
+            <pizza> Caramelised Pizza </pizza>
+            <ingredients> White Base, Caramelised onions, Vegan Mozzarella, Mushrooms, Rosemary white sauce </ingredients>
+            <price> 13 </price>
+        </product>
+
+        <product>
+            <pizza> Vegetables Pizza </pizza>
+            <ingredients> Tomato base, Onions, Peppers, Mushrooms, Cashew Nuts, Red Pesto </ingredients>
+            <price> 13 </price>
+        </product>
     </types>
 
 </pizzaplanet>

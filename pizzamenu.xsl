@@ -1,4 +1,5 @@
-<?xml version="1.0" ?>
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Referecing and based on Mikhail PaddyCaffe's https://github.com/mikhail-cct/xml-bootcamp -->
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
     <xsl:template match="/">
     <!-- Menu from Pizza Planet -->
@@ -15,10 +16,17 @@
                     <th> Price </th>
             </thead>
             <tbody>
+
             <!-- For the types of pizza we create different tables -->
-                <xsl:for-each select='/pizzaplanet/types'>
+                <xsl:for-each select="/pizzaplanet/types">
+                <!-- Creating the 4 columns -->
+
+                <tr>
+                    <td colspan="4"> <xsl:value-of select="@name"/> </td>
+                </tr>
+                    <xsl:for-each select="product">
+                <!-- Giving columns titles -->
                 <tr id="positionTables">
-                <!-- Creating the 4 columns again -->
                     <td colspan="4">
                         <!-- Getting xml tags-->
                         <td> <input name="pizza0" type = "checkbox"/> </td>
@@ -27,6 +35,7 @@
                         <td> <xsl:value-of select="price"/> </td>
                     </td>
                 </tr>
+                    </xsl:for-each>
                 </xsl:for-each>
             </tbody>
         </table>

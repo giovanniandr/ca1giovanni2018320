@@ -37,10 +37,60 @@
                 <div id="pizzamenu"> <img class="pizzamenu" src="img/Hologram.png"> </div>
         </div>
                 
-        
-            <div class="void"> 
+        <!-- Void is the background -->
+        <section class="void"> 
+
+            <!-- Pizza menu starts -->
+
+            <!-- Our table with pizzas for selection -->
+            <div class="table">
+            <div class="col">
+                <div id="tableTitle"> 
+                    <h1> Pizza Planet </h1>
+                    <p> The interstellar pizza maker, choose our best pizzas : </p>
+                </div>
+
+                <!-- Display the table to user -->
+                <thead> 
+                <tr>
+                    <th> <input type="checkbox" id="check" name="check"/> </th>
+                    <th>Pizza</th>
+                    <th>Ingredients</th>
+                    <th>Price</th>
+                </tr>
+                </thead>
+
                 
+                <form enctype="application/json" action="/post/json" method="post">
+                    <div class="tabledesign">
+                        <!-- Type of pizzas -->
+                        <select class="tableContents" name= "optionNames">
+                            <option value="0"> Regular Pizzas </option>
+                            <option value="1"> Vegetarian Pizzas </option>
+                            <option value="2"> Vegan Pizzas </option>
+                        </select>
+
+                        <!-- Pizza names, ingridients and prices-->
+                        <input class="tabledesign" type="text" name="item" placeholder="Item"> 
+                        <input class="tabledesign" type="text" name="ingridients" placeholder="Ingridients"> 
+                        <input class="tabledesign" type="text" name="price" placeholder="Price">
+                        <button type="submit" class="btnconfirm"> Add to cart </button>
+                    </div>
+                </form>
+
+            <!-- Our cart options -->
+            <button id="delete"> Clear cart </button>
+           
+            <!-- Billing -->
+            <form>
+                <div>
+
+                </div>
+            </form>
+
             </div>
+            </div>
+        </section>
 
 
     </body>
