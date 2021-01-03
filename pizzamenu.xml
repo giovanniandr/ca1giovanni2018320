@@ -2,7 +2,7 @@
 <!-- Referecing and based on Mikhail PaddyCaffe's https://github.com/mikhail-cct/xml-bootcamp -->
 <pizzaplanet>
     <!-- Node for regular pizzas -->
-    <types name = "Regular">
+    <types name="Regular">
         <product>
             <pizza> Neapolitan Pizza </pizza>
             <ingredients> Buffalo Cheese, Tomatoes, Basil </ingredients>
