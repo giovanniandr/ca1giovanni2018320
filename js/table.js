@@ -2,18 +2,24 @@
 //Referecing and based on Mikhail PaddyCaffe's https://github.com/mikhail-cct/xml-bootcamp
 
 //Add to our table using the selection that will be made by the user.
-function produtAdd(){
-    $("post").empty();
-    $.getJSONuncached = function (url) {
-        return $.ajax(
-            {
-                url: url,
-                type: 'GET',
-                cache: false,
-                success: function (html) { $("post").append(html); productSelect();}
-            });
-    };
-$.getJSONuncached("/get/html")
+function productAdd()
+{
+	$("#post").empty();
+	$.getJSONuncached = function (url)
+	{
+		return $.ajax(
+		{
+			url: url,
+			type: 'GET',
+			cache: false,
+			success: function (html)
+			{
+				$("#post").append(html);
+				select_row();
+			}
+		});
+	};
+	$.getJSONuncached("/get/html")
 };
 
 //Selection to be made by the user.
